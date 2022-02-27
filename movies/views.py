@@ -9,7 +9,8 @@ def index(request):
     param={"allmove":allmove}
 
     return render(request,'index.html',param)
-
+def login(request):
+    return render(request,'login/index.html')
 def movieView(request,myid):
     movie = movies.objects.filter(movie_id=myid)
 
